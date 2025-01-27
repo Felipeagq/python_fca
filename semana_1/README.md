@@ -194,5 +194,4 @@ print(suma)
 
 ¡Con esto concluye nuestra primera clase! Practica los conceptos y prepara tus dudas para la próxima sesión.
 
-profundiza más en cada tema, agrega funciones y metodos
 
