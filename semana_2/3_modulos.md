@@ -102,7 +102,70 @@ import math
 print(math.sqrt(16))  # 4.0
 print(math.pi)  # 3.141592653589793
 ```
+### **1️⃣ Módulos para JSON, XML y Serialización de Datos**
+| Módulo | Descripción |
+|--------|------------|
+| `json` | Manejo de datos en formato JSON. |
+| `csv` | Lectura y escritura de archivos CSV. |
+| `xml` | Procesamiento de datos XML. |
+| `pickle` | Serialización y deserialización de objetos en Python. |
+📌 **Ejemplo con `json`:**
+```python
+import json
 
+data = {"nombre": "Juan", "edad": 30}
+json_string = json.dumps(data)  # Convertir a JSON
+print(json_string)  # {"nombre": "Juan", "edad": 30}
+```
+###  **2️⃣ Módulos para Manejo de Archivos y Directorios**
+| Módulo | Descripción |
+|--------|------------|
+| `os` | Interacción con el sistema operativo (crear, eliminar archivos). |
+| `shutil` | Operaciones avanzadas con archivos (copiar, mover, comprimir). |
+| `pathlib` | Manejo moderno y más intuitivo de rutas de archivos. |
+| `glob` | Búsqueda de archivos con patrones. |
+| `tempfile` | Creación de archivos y directorios temporales. |
+
+📌 **Ejemplo con `os`:**
+```python
+import os
+
+print(os.getcwd())  # Muestra el directorio actual
+os.mkdir("nueva_carpeta")  # Crea una carpeta
+```
+
+### **3️⃣ Módulos para Manipulación de Fechas y Tiempo**
+| Módulo | Descripción |
+|--------|------------|
+| `time` | Funciones relacionadas con el tiempo y pausas en la ejecución. |
+| `datetime` | Manejo avanzado de fechas y horas. |
+| `calendar` | Funciones para trabajar con calendarios. |
+
+📌 **Ejemplo con `datetime`:**
+```python
+from datetime import datetime
+
+ahora = datetime.now()
+print(ahora.strftime("%Y-%m-%d %H:%M:%S"))  # Formatea la fecha actual
+```
+
+
+### **4️⃣ Módulos para Redes e Internet**
+| Módulo | Descripción |
+|--------|------------|
+| `socket` | Comunicación entre redes y sockets TCP/IP. |
+| `http` | Funcionalidades para servidores y clientes HTTP. |
+| `urllib` | Descarga de archivos y acceso a URLs. |
+| `requests` | (Módulo externo) Manejo de peticiones HTTP más fácil. |
+
+📌 **Ejemplo con `urllib`:**
+```python
+import urllib.request
+
+url = "https://www.python.org"
+response = urllib.request.urlopen(url)
+print(response.status)  # 200 si la página respondió correctamente
+```
 ---
 
 ## **7️⃣ Crear un Paquete con Múltiples Módulos**
