@@ -27,7 +27,7 @@ colores = {
     "amarillo": "yellow",
     "negro": "black"
 }
-color = input("ingresa un color: ")    
+color = input("ingresa un color: ") # morado
 color_in = colores.get(color, False)
 if color_in == False:
     print(f"el color {color} no se encuentra")
