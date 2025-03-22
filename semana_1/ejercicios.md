@@ -63,5 +63,6 @@ El usuario ingresa una frase y el programa verifica si contiene palabras prohibi
 - Lista de palabras prohibidas.
 - Lista de palabras magicas, si el usuario las dice, se imprime "chazam".
 - Si encuentra una palabra prohibida, muestra una advertencia y detiene el programa.
-- Si no hay palabras prohibidas, sigue preguntando.
+- Si no hay palabras prohibidas ni magicas, sigue la siguiente iteración.
+- Debe ser indiferente a las mayusuclas.
 
