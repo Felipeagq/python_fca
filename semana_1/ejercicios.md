@@ -46,3 +46,13 @@ Traducción en inglés: red
 Ingrese un color en español: morado
 Color no encontrado.
 ```
+
+
+Ejercicio 1: Detector de número secreto 🔢
+Crea un programa que pida al usuario adivinar un número secreto (por ejemplo, 7).
+- Solo tiene 5 intentos
+- Si el usuario acierta, muestra un mensaje de victoria y termina el bucle con break.
+- Si el usuario ingresa un número incorrecto, sigue pidiendo otro intento.
+- Si el usuario ingresa un número negativo, ignora esa entrada con continue.
+
+
