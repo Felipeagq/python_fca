@@ -32,3 +32,14 @@
 
 Estos métodos y funciones ofrecen herramientas poderosas para trabajar con datos numéricos en Python. A medida que avances, te serán útiles para realizar cálculos complejos y optimizar tus programas.
 
+
+
+
+## Verificación de edades 🎂
+Crea una función que valide la edad ingresada por el usuario.
+- Usa try-except para manejar errores si ingresan letras.
+- Si el número es negativo, vuelve a pedir la edad.
+- Sigue pidiendo hasta que ingrese una edad válida.
+
+
+
