@@ -60,6 +60,8 @@ Crea un programa que pida al usuario adivinar un número secreto (por ejemplo, 7
 ## Ejercicio 2: Contador de palabras prohibidas 🚫
 El usuario ingresa una frase y el programa verifica si contiene palabras prohibidas como "maldición" o "odio".
 - cada iteración el usuario debe ingresar frases
+- Lista de palabras prohibidas.
+- Lista de palabras magicas, si el usuario las dice, se imprime "chazam".
 - Si encuentra una palabra prohibida, muestra una advertencia y detiene el programa.
 - Si no hay palabras prohibidas, sigue preguntando.
 
