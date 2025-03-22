@@ -48,11 +48,21 @@ Color no encontrado.
 ```
 
 
-Ejercicio 1: Detector de número secreto 🔢
+## Ejercicio 1: Detector de número secreto 🔢
 Crea un programa que pida al usuario adivinar un número secreto (por ejemplo, 7).
 - Solo tiene 5 intentos
 - Si el usuario acierta, muestra un mensaje de victoria y termina el bucle con break.
 - Si el usuario ingresa un número incorrecto, sigue pidiendo otro intento.
 - Si el usuario ingresa un número negativo, ignora esa entrada con continue.
 
+---
+
+## Ejercicio 2: Contador de palabras prohibidas 🚫
+El usuario ingresa una frase y el programa verifica si contiene palabras prohibidas como "maldición" o "odio".
+- cada iteración el usuario debe ingresar frases
+- Lista de palabras prohibidas.
+- Lista de palabras magicas, si el usuario las dice, se imprime "chazam".
+- Si encuentra una palabra prohibida, muestra una advertencia y detiene el programa.
+- Si no hay palabras prohibidas ni magicas, sigue la siguiente iteración.
+- Debe ser indiferente a las mayusuclas.
 
