@@ -1,6 +1,14 @@
-def agregar_producto(productos_lista):
-    producto = input("escribe el producto: ")
-    cantidad = int(input("escribe el cantidad: "))
-    precio = int(input("escribe el precio: "))
-    productos_lista[producto] = {"precio": precio, "stock":cantidad}
-    print(productos_lista[producto])
+import json
+
+def agregar_producto(
+    producto:str,
+    precio:int,
+    cantidad:int 
+) -> dict:
+    with open("datos.json", "r", encoding="utf-8") as archivo:
+        diccionario = json.load(archivo)
+        
+    diccionario[producto] = {"precio": precio, "stock":cantidad}
+    
+    with open("datos.json", "w", encoding="utf-8") as archivo:
+        json.dump(diccionario, archivo, indent=4, ensure_ascii=False)
