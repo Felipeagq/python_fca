@@ -1,22 +1,6 @@
-
-def agregar_producto(productos_lista):
-    producto = input("escribe el producto: ")
-    cantidad = int(input("escribe el cantidad: "))
-    precio = int(input("escribe el precio: "))
-    productos_lista[producto] = {"precio": precio, "stock":cantidad}
-    print(productos_lista[producto])
-    pass
-
-def consultar_producto(productos_lista):
-    producto = input("Producto a consultar: ")
-    print(productos_lista[producto])
-    
-
-def mostrar_inventario(productos_lista):
-    productos = productos_lista.keys()
-    for p in productos:
-        print(f"{p} cuesta {productos_lista[p]["precio"]} y hay {productos_lista[p]["stock"]}")
-        
+from consultar import (consultar_producto,mostrar_inventario)
+from agregar import agregar_producto
+from datetime  import datetime
 
 lista_de_productos = {
     "empanada":{
@@ -28,9 +12,6 @@ lista_de_productos = {
         "stock":2
     },
 }
-
-
-
 
 while True: 
     choice = input(""""
