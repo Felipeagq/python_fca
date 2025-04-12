@@ -7,7 +7,37 @@ Crea un programa que simule un cajero automático:
 - El saldo inicial es $5000. Si el monto solicitado es mayor que el saldo disponible, muestra "Fondos insuficientes".
 - Si hay suficiente saldo, descuéntalo y muestra el saldo restante.
 
-
+```python
+saldo = 5000
+pin = 4567
+for i in range(3):
+    while True:
+        try:
+            pin_user = int(input("Digite su pin: "))
+            break
+        except:
+            print("ha digitado mal")
+    if pin_user == pin:
+        print("pin correcto")
+        while True:
+            try:
+                retiro = int(input("Cuanto quiere retirar: "))
+                break
+            except:
+                print("ha digitado mal")
+        if retiro < saldo:
+            saldo = saldo - retiro
+            print("usted a retirado $",retiro,"y le queda un saldo de $",saldo)
+        else:
+            print("saldo insuficiente")
+            break
+        break
+    else:
+        print("pin incorrecto")
+else:
+    print("Tus intentos se han acabado")
+print("Fin de la transacción")
+```
 ---
 ### **📌 Ejercicio: Traductor de colores**  
 Crea un programa que use un **diccionario** para traducir colores del español al inglés.  
