@@ -1,4 +1,14 @@
 
+1. instalación : python, vs, git
+2. entornos : vs, interprete
+3. tipos de datos
+4. video estrcutura de datos
+5. estrucutra de datos
+6. video flujos de control
+7. flujos de control
+8. ejercicios
+
+
 ### Funciones Matemáticas Adicionales (módulo `math`)
 - Importa el módulo `math` para acceder a funciones matemáticas avanzadas.
   ```python
